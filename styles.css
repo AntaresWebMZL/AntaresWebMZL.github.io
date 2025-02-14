@@ -1,0 +1,443 @@
+/* Importar la fuente Poppins de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+section 
+{
+    scroll-margin-top: 150px; /* Ajusta el valor según necesites */
+}
+
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+/* Barra de navegación fija */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #96009b;
+    z-index: 1100;
+    height: 75px;
+    padding: 20 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contenedor del logo */
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 70px;
+}
+
+header .logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contenedor de la navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #7d007f;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos principales */
+h1, h2 {
+    font-size: 2.5em;
+    color: #96009b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para la sección de Inicio */
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#inicio .inicio-contenido {
+    flex: 1;
+    text-align: left;
+}
+
+#inicio .logo-placeholder {
+    height: 150px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+#inicio .eslogan {
+    font-size: 1.9em;
+    color: #96009b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#inicio .inicio-imagen {
+    flex: 1;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    img {
+        border-radius: 10px; /* Ajusta el valor según lo que necesites */
+    }
+    
+}
+
+/* Estilos para los botones en la sección de inicio */
+#inicio .botones-inicio {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 5%;
+    position: absolute;
+    bottom: 20px;
+}
+
+#inicio .boton-inicio {
+    width: 50px;
+    height: 50px;
+    background-color: #96009b;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#inicio .boton-inicio:hover {
+    background-color: #7d007f;
+    transform: scale(1.1);
+}
+/* Estilos para la sección ¿Quiénes somos? */
+
+#quienes-somos .texto-pequeno {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección Habitaciones */
+#habitaciones .carrusel {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+#habitaciones .carrusel-contenedor {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#habitaciones .carrusel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0.5;
+    transform: scale(0.8);
+    
+}
+
+#habitaciones .carrusel-slide.activo {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#habitaciones .carrusel-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#habitaciones .descripcion {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para la sección Recorrido */
+#recorrido .recorrido-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    img {
+        border-radius: 10px; /* Ajusta el valor según lo que necesites */
+    }
+}
+
+#recorrido .recorrido-texto {
+    flex: 1;
+}
+
+#recorrido .recorrido-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+#recorrido .imagen-placeholder {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+#recorrido .recorrido-boton {
+    background-color: #96009b;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#recorrido .recorrido-boton:hover {
+    background-color: #7d007f;
+}
+
+#recorrido .recorrido-boton a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para la sección Servicios */
+#servicios .servicios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#servicios .servicio {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#servicios .servicio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#servicios .servicio-texto h3 {
+    font-size: 1.5em;
+    color: #96009b;
+    margin-bottom: 10px;
+}
+
+#servicios .servicio-texto p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+#servicios .servicio-imagen {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+#servicios .servicio:hover .servicio-imagen {
+    transform: scale(1.1);
+}
+
+/* Estilos para la sección Estadísticas */
+#estadisticas {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+#estadisticas h2 {
+    font-size: 2.5em;
+    color: #96009b;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#estadisticas .estadisticas-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#estadisticas .estadistica-cuadro {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#estadisticas .estadistica-cuadro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#estadisticas .estadistica-cuadro h3 {
+    font-size: 2em;
+    color: #96009b;
+    margin-bottom: 10px;
+}
+
+#estadisticas .estadistica-cuadro p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+/* Estilos para la sección Información */
+#informacion .informacion-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#informacion .informacion-cuadro {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+}
+
+#informacion .cuadro-fondo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+#informacion .cuadro-fondo h3 {
+    font-size: 1.5em;
+    color: #96009b;
+    margin-bottom: 10px;
+}
+
+#informacion .cuadro-fondo p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+#informacion .informacion-boton {
+    background-color: #96009b;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#informacion .informacion-boton:hover {
+    background-color: #7d007f;
+}
+
+#informacion .informacion-boton a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Resaltado del botón "Programa aquí" */
+#informacion .informacion-boton.resaltado {
+    background-color: #7d007f;
+    transform: scale(1.05);
+}
+
+#informacion .informacion-correo {
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 40px;
+}
