@@ -1,42 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!DOCTYPE html>
-    <html lang="es">
-<!-- Script para forzar el tamaño en móviles -->
-        <script>
-            // Verificar si el dispositivo es un móvil
-            function esMovil() {
-                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-            }
-    
-            // Forzar el tamaño de la página en móviles
-            if (esMovil()) {
-                const anchoForzado = 933;
-                const altoForzado = 625;
-    
-                // Cambiar el viewport
-                const metaViewport = document.querySelector('meta[name="viewport"]');
-                metaViewport.setAttribute('content', `width=${anchoForzado}, initial-scale=1.0`);
-    
-                // Cambiar el tamaño del contenedor
-                const contenedor = document.querySelector('.contenedor');
-                contenedor.style.width = `${anchoForzado}px`;
-                contenedor.style.height = `${altoForzado}px`;
-                contenedor.style.margin = '0 auto';
-                contenedor.style.overflow = 'auto';
-    
-                // Deshabilitar el zoom
-                document.addEventListener('gesturestart', function (e) {
-                    e.preventDefault();
-                });
-            }
-        </script>
-    </body>
-    </html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antares adulto mayor</title>
+    <title>Antares Adulto Mayor</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Antares png (1).png">
     <style>
@@ -93,21 +60,17 @@
             padding: 20px;
             margin: 10px;
             border-radius: 10px;
-            
         }
     </style>
 </head>
 <body>
     <!-- Barra de navegación fija -->
     <header>
-        <!-- Contenedor del logo -->
         <div class="logo-container">
             <div class="logo">
-                <img src="antares pagina.png" width="100%" alt="logo de la empresa">
+                <img src="antares pagina.png" width="100%" alt="Logo de Antares">
             </div>
         </div>
-
-        <!-- Contenedor de la navegación -->
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -130,23 +93,17 @@
                 <div class="logo-placeholder">
                     <img src="antares pagina.png" width="30%">
                 </div>
-                <p class="eslogan">Hogar de cuidado integral<br/> al adulto mayor</p>
+                <p class="eslogan">Hogar de cuidado integral<br>al adulto mayor</p>
             </div>
             <div class="inicio-imagen">
                 <img src="img2.jpeg" width="100%">
                 <div class="botones-inicio">
-                    <!-- Botón 1: Instagram -->
-                    <a href="https://www.instagram.com/antares_adulto_mayor_manizales/" class="boton-inicio boton-izquierda" target="_blank"><img src="Insta.png" height="100%"></a> 
-                    <!-- Botón 2: Facebook -->
+                    <a href="https://www.instagram.com/antares_adulto_mayor_manizales/" class="boton-inicio boton-izquierda" target="_blank"><img src="Insta.png" height="100%"></a>
                     <a href="https://www.facebook.com/Antaresadultomayormanizales" class="boton-inicio boton-centro" target="_blank"><img src="Face.png"></a>
-                    <!-- Botón 3: WhatsApp -->
                     <a href="https://wa.link/ow089q" class="boton-inicio boton-derecha" target="_blank"><img src="whatsapp.png" height="100%"></a>
                 </div>
             </div>
         </section>
-    </main>
-</body>
-</html>
 
         <!-- Sección ¿Quiénes somos? -->
         <section id="quienes-somos">
@@ -160,7 +117,6 @@
         <!-- Sección Habitaciones -->
         <section id="habitaciones">
             <h2>Conoce nuestras habitaciones</h2>
-            <overflow:visible></overflow:visible>
             <div class="carousel" id="roomsCarousel">
                 <div class="carousel-inner">
                     <div class="carousel-item">
@@ -169,7 +125,6 @@
                     <div class="carousel-item">
                         <img src="habi 2.jpg" alt="Habitación 2">
                     </div>
-                   
                 </div>
                 <button class="carousel-control prev" onclick="moveRoomCarousel(-1)">&#10094;</button>
                 <button class="carousel-control next" onclick="moveRoomCarousel(1)">&#10095;</button>
@@ -188,7 +143,7 @@
                 </div>
                 <div class="recorrido-imagen">
                     <div class="imagen-placeholder">
-                       <img src="apreton 2.jpg" height="103%">
+                        <img src="apreton 2.jpg" height="103%">
                     </div>
                     <div class="recorrido-boton">
                         <a href="#informacion" onclick="resaltarBotonPrograma()">Click aquí para programar tu recorrido</a>
@@ -201,94 +156,85 @@
         <section id="servicios">
             <h2>Nuestros servicios</h2>
             <div class="servicios-contenedor">
-                <!-- Servicio 1: Atención de enfermería 24/7 -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Atención de enfermería 24/7</h3>
                         <p>Cuidado médico profesional disponible las 24 horas del día, los 7 días de la semana.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-enfermera-100.png" width="100"><!-- Imagen del servicio 1 -->
+                        <img src="icons8-enfermera-100.png" width="100">
                     </div>
                 </div>
-                <!-- Servicio 2: Alimentación balanceada -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Alimentación balanceada</h3>
                         <p>Menús diseñados por nutricionistas para garantizar una dieta saludable y equilibrada.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-alimentación-saludable-100.png" width="100"><!-- Imagen del servicio 2 -->
+                        <img src="icons8-alimentación-saludable-100.png" width="100">
                     </div>
                 </div>
-                <!-- Servicio 3: Administración de medicamentos -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Gestión de medicamentos</h3>
                         <p>Control y supervisión de medicamentos por parte de personal capacitado.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-plan-de-tratamiento-100.png" width="100"><!-- Imagen del servicio 3 -->
+                        <img src="icons8-plan-de-tratamiento-100.png" width="100">
                     </div>
                 </div>
-                <!-- Servicio 4: Terapias físicas -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Terapias físicas</h3>
-                        <p>Programas dirijido por nuestra fisioterapeuta para mejorar la movilidad y el bienestar físico.</p>
+                        <p>Programas dirigidos por nuestra fisioterapeuta para mejorar la movilidad y el bienestar físico.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-fisioterapia-100.png" width="100"><!-- Imagen del servicio 4 -->
+                        <img src="icons8-fisioterapia-100.png" width="100">
                     </div>
                 </div>
-                <!-- Servicio 5: Terapias recreativas -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Terapias recreativas</h3>
                         <p>Actividades lúdicas y entretenimiento para fomentar la alegría y la socialización.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-entrenador-100.png" width="100"><!-- Imagen del servicio 5 -->
+                        <img src="icons8-entrenador-100.png" width="100">
                     </div>
                 </div>
-                <!-- Servicio 6: Terapias ocupacionales -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Terapias ocupacionales</h3>
                         <p>Actividades diseñadas para mantener la independencia y las habilidades cotidianas.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-jugador-de-ajedrez-90.png" width="100"><!-- Imagen del servicio 6 -->
+                        <img src="icons8-jugador-de-ajedrez-90.png" width="100">
                     </div>
                 </div>
-                <!-- Servicio 7: Celebración de fechas especiales -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Celebración de fechas especiales</h3>
                         <p>Eventos y festejos para celebrar cumpleaños, aniversarios y otras fechas importantes.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-cumpleaños-100.png" width="100"><!-- Imagen del servicio 7 -->
+                        <img src="icons8-cumpleaños-100.png" width="100">
                     </div>
                 </div>
-                <!-- Servicio 8: Misas semanales -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Misas semanales</h3>
                         <p>Celebraciones religiosas para fomentar la espiritualidad y el bienestar emocional.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-iglesia-100.png" width="100"><!-- Imagen del servicio 8 -->
+                        <img src="icons8-iglesia-100.png" width="100">
                     </div>
                 </div>
-                <!-- Servicio 9: Zona de parqueo para visitantes -->
                 <div class="servicio">
                     <div class="servicio-texto">
                         <h3>Zona de parqueo para visitantes</h3>
                         <p>Área segura y cómoda para que los visitantes puedan estacionar sus vehículos.</p>
                     </div>
                     <div class="servicio-imagen">
-                        <img src="icons8-aparcamiento-descubierto-100.png" width="100"><!-- Imagen del servicio 9 -->
+                        <img src="icons8-aparcamiento-descubierto-100.png" width="100">
                     </div>
                 </div>
             </div>
@@ -307,19 +253,19 @@
                     </div>
                     <div class="carousel-item">
                         <div class="testimonial-item">
-                            <p>"Antares ha sido una bendición para nuestra familia. Mi padre recibe un cuidado excepcional <br/> y siempre está feliz. Las actividades y terapias son fantásticas. ¡Gracias por todo!"</p>
+                            <p>"Antares ha sido una bendición para nuestra familia. Mi padre recibe un cuidado excepcional <br> y siempre está feliz. Las actividades y terapias son fantásticas. ¡Gracias por todo!"</p>
                             <p><strong>- Juan Pérez</strong></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="testimonial-item">
-                            <p>"El equipo de Antares es increíble. Mi abuela está muy bien cuidada y siempre <br/> nos sentimos bienvenidos cuando la visitamos. ¡Gracias por hacerla sentir como en casa!"</p>
+                            <p>"El equipo de Antares es increíble. Mi abuela está muy bien cuidada y siempre <br> nos sentimos bienvenidos cuando la visitamos. ¡Gracias por hacerla sentir como en casa!"</p>
                             <p><strong>- Laura Martínez</strong></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="testimonial-item">
-                            <p>"No puedo expresar lo agradecido que estoy con Antares. Mi tío ha mejorado mucho desde que llegó aquí.<br/>  El ambiente es cálido y acogedor, y el personal es muy profesional. ¡Altamente recomendado!"</p>
+                            <p>"No puedo expresar lo agradecido que estoy con Antares. Mi tío ha mejorado mucho desde que llegó aquí.<br> El ambiente es cálido y acogedor, y el personal es muy profesional. ¡Altamente recomendado!"</p>
                             <p><strong>- Carlos Sánchez</strong></p>
                         </div>
                     </div>
@@ -333,17 +279,14 @@
         <section id="estadisticas">
             <h2>Nuestros números</h2>
             <div class="estadisticas-contenedor">
-                <!-- Cuadro 1: +8 años de experiencia -->
                 <div class="estadistica-cuadro">
                     <h3>+8 años</h3>
                     <p>de experiencia en el cuidado de adultos mayores.</p>
                 </div>
-                <!-- Cuadro 2: 20 habitaciones -->
                 <div class="estadistica-cuadro">
                     <h3>20 habitaciones</h3>
                     <p>amplias y cómodas para nuestros residentes.</p>
                 </div>
-                <!-- Cuadro 3: +10 enfermeras -->
                 <div class="estadistica-cuadro">
                     <h3>+10 enfermeras</h3>
                     <p>para atender a cualquier necesidad 24/7</p>
@@ -355,7 +298,6 @@
         <section id="informacion">
             <h2>Punto de información</h2>
             <div class="informacion-contenedor">
-                <!-- Cuadro 1: Ubicación -->
                 <div class="informacion-cuadro">
                     <h3>Ubicación:</h3>
                     <p>La castellana<br>calle 10 A #28-29 Manizales</p>
@@ -363,20 +305,16 @@
                         <a href="https://maps.app.goo.gl/JUKtbYyYu6Zx27G1A" target="_blank">Mapa</a>
                     </div>
                 </div>
-                <!-- Cuadro 2: Horarios -->
                 <div class="informacion-cuadro">
                     <h3>Horarios de visita:</h3>
-                    <p>9 am a 5 pm todos los días
-                        programa tu visita gratis</p>
-                    
+                    <p>9 am a 5 pm todos los días<br>programa tu visita gratis</p>
                     <div class="informacion-boton" id="boton-programa">
                         <a href="https://wa.link/sse09x" target="_blank">Programa aquí</a>
                     </div>
                 </div>
-                <!-- Cuadro 3: Contacto -->
                 <div class="informacion-cuadro">
                     <h3>Contáctanos:</h3>
-                    <p>318-610-9411 <br/>¡Te esperamos!</p>
+                    <p>318-610-9411 <br>¡Te esperamos!</p>
                     <div class="informacion-boton">
                         <a href="https://wa.link/0nbzg0" target="_blank">Whatsapp</a>
                     </div>
@@ -384,12 +322,11 @@
             </div>
             <p class="informacion-correo">Consulta y deja tus opiniones en nuestro correo:<br>gerenciaantares@gmail.com</p>
         </section>
-
     </main>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 Antares adulto mayor. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Antares Adulto Mayor. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Script para los carruseles -->
@@ -413,19 +350,17 @@
             testimonialIndex = (testimonialIndex + direction + testimonialItems) % testimonialItems;
             carouselInner.style.transform = `translateX(-${testimonialIndex * 100}%)`;
         }
-    </script>
 
-    <!-- Script para resaltar el botón "Programa aquí" -->
-    <script>
+        // Script para resaltar el botón "Programa aquí"
         function resaltarBotonPrograma() {
             const botonPrograma = document.getElementById('boton-programa');
-            botonPrograma.style.backgroundColor = '#7d007f'; /* Cambia el color de fondo */
-            botonPrograma.style.transform = 'scale(1.05)'; /* Efecto de escala */
+            botonPrograma.style.backgroundColor = '#7d007f';
+            botonPrograma.style.transform = 'scale(1.05)';
             setTimeout(() => {
-                botonPrograma.style.backgroundColor = '#96009b'; /* Restaura el color original */
-                botonPrograma.style.transform = 'scale(1)'; /* Restaura el tamaño original */
-            }, 1000); /* Duración del resaltado */
+                botonPrograma.style.backgroundColor = '#96009b';
+                botonPrograma.style.transform = 'scale(1)';
+            }, 1000);
         }
-    </script>                
+    </script>
 </body>
 </html>
