@@ -1,5 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+    <!DOCTYPE html>
+    <html lang="es">
+<!-- Script para forzar el tamaño en móviles -->
+        <script>
+            // Verificar si el dispositivo es un móvil
+            function esMovil() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+    
+            // Forzar el tamaño de la página en móviles
+            if (esMovil()) {
+                const anchoForzado = 933;
+                const altoForzado = 625;
+    
+                // Cambiar el viewport
+                const metaViewport = document.querySelector('meta[name="viewport"]');
+                metaViewport.setAttribute('content', `width=${anchoForzado}, initial-scale=1.0`);
+    
+                // Cambiar el tamaño del contenedor
+                const contenedor = document.querySelector('.contenedor');
+                contenedor.style.width = `${anchoForzado}px`;
+                contenedor.style.height = `${altoForzado}px`;
+                contenedor.style.margin = '0 auto';
+                contenedor.style.overflow = 'auto';
+    
+                // Deshabilitar el zoom
+                document.addEventListener('gesturestart', function (e) {
+                    e.preventDefault();
+                });
+            }
+        </script>
+    </body>
+    </html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
