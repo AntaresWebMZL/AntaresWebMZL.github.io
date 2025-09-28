@@ -1,10 +1,9 @@
 /* Importar la fuente Poppins de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-section 
-{
+
+section {
     scroll-margin-top: 150px; /* Ajusta el valor según necesites */
 }
-
 
 /* Estilos generales */
 body {
@@ -26,10 +25,11 @@ header {
     background-color: #96009b;
     z-index: 1100;
     height: 75px;
-    padding: 20 20px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 /* Contenedor del logo */
@@ -55,6 +55,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -130,10 +131,10 @@ h1, h2 {
     align-items: flex-end;
     justify-content: center;
     position: relative;
-    img {
-        border-radius: 10px; /* Ajusta el valor según lo que necesites */
-    }
-    
+}
+
+#inicio .inicio-imagen img {
+    border-radius: 10px;
 }
 
 /* Estilos para los botones en la sección de inicio */
@@ -158,8 +159,8 @@ h1, h2 {
     background-color: #7d007f;
     transform: scale(1.1);
 }
-/* Estilos para la sección ¿Quiénes somos? */
 
+/* Estilos para la sección ¿Quiénes somos? */
 #quienes-somos .texto-pequeno {
     font-size: 1.1em;
     color: #555;
@@ -175,7 +176,6 @@ h1, h2 {
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
-
 }
 
 #habitaciones .carrusel-contenedor {
@@ -189,7 +189,6 @@ h1, h2 {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0.5;
     transform: scale(0.8);
-    
 }
 
 #habitaciones .carrusel-slide.activo {
@@ -219,9 +218,10 @@ h1, h2 {
     display: flex;
     align-items: center;
     gap: 40px;
-    img {
-        border-radius: 10px; /* Ajusta el valor según lo que necesites */
-    }
+}
+
+#recorrido .recorrido-contenedor img {
+    border-radius: 10px;
 }
 
 #recorrido .recorrido-texto {
@@ -362,6 +362,7 @@ h1, h2 {
     color: #555;
     line-height: 1.6;
 }
+
 /* Estilos para la sección Información */
 #informacion .informacion-contenedor {
     display: flex;
@@ -440,4 +441,355 @@ footer {
     padding: 10px;
     position: relative;
     margin-top: 40px;
+}
+
+/* ==================== MEDIA QUERIES PARA RESPONSIVE ==================== */
+
+/* Tablet - 768px y menos */
+@media (max-width: 768px) {
+    /* Header responsive */
+    header {
+        height: auto;
+        min-height: 75px;
+        padding: 8px 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .logo-container {
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    
+    header .logo {
+        width: 60px;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav ul {
+        justify-content: center;
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li a {
+        font-size: 0.85em;
+        padding: 6px 8px;
+        white-space: nowrap;
+    }
+    
+    /* Ajustar padding del body */
+    body {
+        padding-top: 100px;
+    }
+    
+    /* Títulos más pequeños */
+    h1, h2 {
+        font-size: 2em;
+    }
+    
+    /* Sección inicio responsive */
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #inicio .inicio-contenido {
+        text-align: center;
+    }
+    
+    #inicio .eslogan {
+        font-size: 1.5em;
+    }
+    
+    #inicio .logo-placeholder {
+        height: 100px;
+    }
+    
+    #inicio .inicio-imagen {
+        height: 250px;
+        width: 100%;
+    }
+    
+    /* Sección recorrido responsive */
+    #recorrido .recorrido-contenedor {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #recorrido .imagen-placeholder {
+        height: 250px;
+    }
+    
+    /* Servicios responsive */
+    #servicios .servicios-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    /* Estadísticas responsive */
+    #estadisticas .estadisticas-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #estadisticas .estadistica-cuadro {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    /* Información responsive */
+    #informacion .informacion-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #informacion .informacion-cuadro {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    /* Carruseles responsive */
+    .carousel-control {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .testimonial-item {
+        padding: 15px;
+        margin: 5px;
+    }
+}
+
+/* Móvil - 480px y menos */
+@media (max-width: 480px) {
+    /* Header para móvil */
+    header {
+        height: auto;
+        min-height: 60px;
+        padding: 8px 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Ocultar logo en móvil */
+    header .logo-container {
+        display: none;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px;
+    }
+    
+    nav ul li a {
+        font-size: 0.75em;
+        padding: 4px 6px;
+        white-space: nowrap;
+    }
+    
+    /* Ajustar padding del body para móvil */
+    body {
+        padding-top: 80px;
+    }
+    
+    /* Contenido principal */
+    main {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Títulos para móvil */
+    h1, h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    
+    /* Sección inicio móvil */
+    #inicio .eslogan {
+        font-size: 1.3em;
+    }
+    
+    #inicio .logo-placeholder {
+        height: 80px;
+        margin: 15px 0;
+    }
+    
+    #inicio .inicio-imagen {
+        height: 200px;
+    }
+    
+    #inicio .botones-inicio {
+        bottom: 10px;
+        width: 95%;
+        padding: 0 2.5%;
+    }
+    
+    #inicio .boton-inicio {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    #inicio .boton-inicio img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+    
+    /* Texto pequeño responsive */
+    .texto-pequeno {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+    
+    /* Servicios para móvil */
+    #servicios .servicios-contenedor {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    #servicios .servicio-texto h3 {
+        font-size: 1.3em;
+    }
+    
+    #servicios .servicio-imagen {
+        height: 80px;
+    }
+    
+    /* Carruseles para móvil */
+    #habitaciones .carrusel-slide img {
+        height: 250px;
+    }
+    
+    .carousel-control {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    .carousel-control.prev {
+        left: 5px;
+    }
+    
+    .carousel-control.next {
+        right: 5px;
+    }
+    
+    /* Testimonios para móvil */
+    .testimonial-item {
+        padding: 12px;
+        margin: 5px 0;
+        font-size: 0.95em;
+    }
+    
+    /* Recorrido para móvil */
+    #recorrido .imagen-placeholder {
+        height: 200px;
+    }
+    
+    /* Estadísticas para móvil */
+    #estadisticas {
+        padding: 30px 10px;
+    }
+    
+    #estadisticas .estadistica-cuadro h3 {
+        font-size: 1.8em;
+    }
+    
+    #estadisticas .estadistica-cuadro p {
+        font-size: 1.1em;
+    }
+    
+    /* Información para móvil */
+    #informacion .cuadro-fondo h3 {
+        font-size: 1.3em;
+    }
+    
+    #informacion .informacion-correo {
+        font-size: 1em;
+    }
+    
+    /* Footer para móvil */
+    footer {
+        padding: 15px 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Móvil muy pequeño - 320px y menos */
+@media (max-width: 320px) {
+    /* Header aún más compacto */
+    header {
+        padding: 6px 8px;
+        min-height: 55px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Logo sigue oculto en móvil pequeño */
+    header .logo-container {
+        display: none;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em;
+        padding: 3px 4px;
+    }
+    
+    /* Ajustar padding del body */
+    body {
+        padding-top: 75px;
+    }
+    
+    h1, h2 {
+        font-size: 1.6em;
+    }
+    
+    #inicio .eslogan {
+        font-size: 1.2em;
+    }
+    
+    .texto-pequeno {
+        font-size: 0.95em;
+    }
+    
+    #servicios .servicio-texto h3 {
+        font-size: 1.2em;
+    }
+    
+    #estadisticas .estadistica-cuadro h3 {
+        font-size: 1.6em;
+    }
+    
+    section {
+        padding: 12px;
+    }
 }
