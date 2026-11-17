@@ -1829,22 +1829,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     object-fit: contain;
 }
-
-.register-btn-footer {
-    border-color: rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.85);
-    padding: 6px 18px;
-    font-size: 0.85rem;
-    border-radius: var(--border-radius-full);
-    transition: var(--transition);
-}
-
-.register-btn-footer:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: #ffffff;
-    color: #ffffff;
-}
-
 /* Hero Social Box Styles */
 .hero-social-box {
     margin-top: 30px;
