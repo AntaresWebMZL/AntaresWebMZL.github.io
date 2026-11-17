@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antares Adulto Mayor | Residencial & Cuidado Integral 24/7 en Manizales</title>
+    <meta name="description" content="Antares es un hogar residencial para adultos mayores en Manizales. Ofrecemos cuidado de enfermería 24/7, instalaciones de primer nivel, nutrición balanceada y actividades terapéuticas.">
+    <meta name="keywords" content="hogar adulto mayor, residencia para ancianos, Manizales, cuidado de adultos mayores, enfermería 24/7, geriatría Manizales, Belmont Village estilo">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Antares Adulto Mayor | Calidez, Cuidado & Vida Plena">
+    <meta property="og:description" content="Hogar residencial de cuidado integral para el adulto mayor en Manizales. Vive con dignidad, amor y atención profesional 24 horas.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Img/antares_logo.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Glassmorphism Navbar -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#inicio" class="brand-logo">
+                <div class="logo-icon-wrapper">
+                    <img src="img/antares_logo.png" alt="Logo Antares Adulto Mayor" class="header-logo-img">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">ANTARES</span>
+                    <span class="brand-tagline">Adulto Mayor</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#quienes-somos" class="nav-link">¿Quiénes somos?</a></li>
+                    <li><a href="#habitaciones" class="nav-link">Habitaciones</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#estadisticas" class="nav-link">Nosotros</a></li>
+                    <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-primary btn-gold schedule-tour-btn" id="openTourModal">
+                    <i class="fa-solid fa-calendar-check"></i> Agendar Recorrido
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+        <section id="inicio" class="hero-section">
+            <div class="video-overlay"></div>
+            <!-- Video Ambient Background -->
+            <video class="hero-video" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1920&q=80">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-nurse-helping-an-elderly-woman-to-walk-41470-large.mp4" type="video/mp4">
+                Tu navegador no soporta el video HTML5.
+            </video>
+
+            <div class="hero-content container">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-star"></i> Hogar de Cuidado Integral & Calidez Humana
+                </div>
+                <h1 class="hero-title">Un Verdadero Hogar Lleno de Cariño, Bienestar y Dignidad</h1>
+                <p class="hero-subtitle">Brindamos una experiencia residencial de excelencia donde la atención profesional 24/7 y el calor de hogar se combinan para celebrar cada etapa de la vida en Manizales.</p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-gold btn-lg" onclick="openTourModalFunc()">
+                        <i class="fa-solid fa-house-medical"></i> Agendar Recorrido Gratuito
+                    </button>
+                    <a href="https://wa.link/ow089q" target="_blank" class="btn btn-outline-light btn-lg">
+                        <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp
+                    </a>
+                </div>
+
+                <div class="hero-social-box">
+                    <span class="social-mini-text">Nuestras redes sociales</span>
+                    <div class="hero-social-buttons">
+                        <a href="https://www.instagram.com/antares_adulto_mayor_manizales/" target="_blank" class="hero-social-btn instagram-btn" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://www.facebook.com/Antaresadultomayormanizales" target="_blank" class="hero-social-btn facebook-btn" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i> Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Features Highlights -->
+                <div class="hero-features-bar">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-user-nurse"></i>
+                        <div>
+                            <strong>Enfermería 24/7</strong>
+                            <span>Atención médica continua</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-utensils"></i>
+                        <div>
+                            <strong>Nutrición Guiada</strong>
+                            <span>Menús balanceados</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <div>
+                            <strong>Terapias Físicas</strong>
+                            <span>Movilidad & bienestar</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <div>
+                            <strong>Entorno Seguro</strong>
+                            <span>La Castellana, Manizales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#quienes-somos" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+                <span>Conoce más</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- QUIÉNES SOMOS SECTION -->
+        <section id="quienes-somos" class="section-padding bg-cream">
+            <div class="container">
+                <div class="grid grid-2 align-center gap-4">
+                    <div class="about-image-wrapper reveal-left">
+                        <div class="image-frame">
+                            <img src="img/antares_about.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1000&q=80';" alt="El lugar donde la vida se disfruta plenamente - Antares Adulto Mayor" class="main-about-img">
+                            <div class="floating-experience-badge">
+                                <span class="exp-number">+10</span>
+                                <span class="exp-text">Años brindando amor y tranquilidad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text-content reveal-right">
+                        <div class="section-header text-left">
+                            <span class="sub-heading"><i class="fa-solid fa-feather-pointed"></i> Nuestra Esencia</span>
+                            <h2 class="section-title">El lugar donde la vida se disfruta plenamente</h2>
+                        </div>
+                        <p class="lead-text">
+                            <strong>Antares</strong> es más que un centro de atención; es un espacio diseñado para hacer sentir a cada residente en un verdadero hogar rodeado de cariño, respeto y comunidad.
+                        </p>
+                        <p class="body-text">
+                            Ofrecemos amplios espacios, luz natural y cómodas habitaciones diseñadas para garantizar total privacidad, autonomía y bienestar integral. Nuestro equipo interdisciplinario se dedica apasionadamente a brindar atención personalizada diaria: desde alimentación balanceada minuciosamente supervisada y administración segura de medicamentos, hasta actividades que ejercitan la mente y alegran el corazón.
+                        </p>
+
+                        <div class="pillars-grid">
+                            <div class="pillar-card">
+                                <div class="pillar-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                                <h4>Respeto & Amor</h4>
+                                <p>Trato humano, digno y personalizado en todo momento.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                                <h4>Cuidado Médico</h4>
+                                <p>Supervisión y control de salud las 24 horas.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon"><i class="fa-solid fa-users"></i></div>
+                                <h4>Comunidad Viva</h4>
+                                <p>Socialización activa y desarrollo emocional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABITACIONES SECTION -->
+        <section id="habitaciones" class="section-padding bg-white">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <span class="sub-heading"><i class="fa-solid fa-bed"></i> Espacios Diseñados para el Confort</span>
+                    <h2 class="section-title">Conoce Nuestras Habitaciones</h2>
+                    <p class="section-subtitle">Alojamiento confortable en suites privadas y compartidas, iluminadas y equipadas con la máxima seguridad.</p>
+                </div>
+
+                <div class="grid grid-2 align-center gap-4 rooms-redesign-grid">
+                    <!-- Left: Rooms Image Carousel -->
+                    <div class="rooms-carousel-wrapper reveal-left">
+                        <div class="rooms-slider-container" id="roomsSliderContainer">
+                            <div class="room-slide active">
+                                <img src="img/room_suite_private.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=80';" alt="Suite Privada Antares">
+                            </div>
+                            <div class="room-slide">
+                                <img src="img/antares_about.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80';" alt="Habitación Compartida Confort">
+                            </div>
+                            <div class="room-slide">
+                                <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1000&q=80" alt="Suite de Cuidado Especial">
+                            </div>
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="room-slider-arrow prev-room-arrow" id="prevRoomBtn" aria-label="Habitación anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="room-slider-arrow next-room-arrow" id="nextRoomBtn" aria-label="Siguiente habitación">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="room-dots" id="roomDots"></div>
+                    </div>
+
+                    <!-- Right: Info Box about equal care & pricing -->
+                    <div class="rooms-info-box reveal-right">
+                        <div class="equality-card">
+                            <div class="equality-header">
+                                <div class="equality-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                                <div>
+                                    <span class="equality-badge">Misma Atención VIP para Todos</span>
+                                    <h3>Atención Integral Sin Distinciones</h3>
+                                </div>
+                            </div>
+                            <p class="equality-description">
+                                En <strong>Antares</strong>, creemos firmemente que la salud, el amor, el respeto y la dignidad son un derecho igualitario para cada uno de nuestros residentes. 
+                            </p>
+                            
+                            <ul class="equality-features-list">
+                                <li><i class="fa-solid fa-circle-check"></i> Enfermería 24/7 y administración estricta de medicamentos.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Alimentación saludable guiada por nutricionista.</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Terapias físicas, ocupacionales, recreativas y misas semanales.</li>
+                            </ul>
+
+                            <button class="btn btn-gold btn-block btn-lg" onclick="openTourModalFunc('Información de Tarifas y Habitaciones')">
+                                <i class="fa-solid fa-calendar-check"></i> Consultar Tarifas & Agendar Visita
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER DE RECORRIDO INSPIRADO EN BELMONT VILLAGE -->
+        <section class="tour-banner-section">
+            <div class="tour-banner-bg"></div>
+            <div class="container relative-z">
+                <div class="tour-banner-content text-center reveal-up">
+                    <span class="tour-badge">Experiencia Presencial Gratuita</span>
+                    <h2>Ven a conocer tu próximo hogar en Manizales</h2>
+                    <p>Te invitamos a programar un recorrido personalizado guiado por nuestra administración. Conoce las instalaciones, interactúa con el equipo de salud y siente la calidez de Antares sin ningún compromiso.</p>
+                    <div class="tour-cta-buttons">
+                        <button class="btn btn-gold btn-xl" onclick="openTourModalFunc()">
+                            <i class="fa-solid fa-calendar-day"></i> Programar Mi Recorrido Gratis
+                        </button>
+                        <a href="tel:3186109411" class="btn btn-outline-light btn-xl">
+                            <i class="fa-solid fa-phone"></i> Llamar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS VIP SECTION -->
+        <section id="servicios" class="section-padding bg-cream">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <span class="sub-heading"><i class="fa-solid fa-hand-holding-medical"></i> Servicios Integrales</span>
+                    <h2 class="section-title">Todo lo que su ser querido necesita</h2>
+                    <p class="section-subtitle">Un portafolio completo de atención en salud, bienestar, nutrición y entretenimiento con los más altos estándares gerontológicos.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Servicio 1 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h3>Enfermería 24/7</h3>
+                        <p>Atención y cuidado médico profesional ininterrumpido todos los días del año con personal calificado.</p>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+                        <h3>Alimentación Balanceada</h3>
+                        <p>Menús diseñados por nutricionistas especializados para asegurar el balance calórico y gustoso.</p>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-pills"></i>
+                        </div>
+                        <h3>Gestión de Medicamentos</h3>
+                        <p>Control riguroso, administración puntual y seguimiento estricto por parte del equipo de salud.</p>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-person-walking"></i>
+                        </div>
+                        <h3>Terapias Físicas</h3>
+                        <p>Ejercicios dirigidos por fisioterapeutas para conservar la fuerza, flexibilidad y autonomía física.</p>
+                    </div>
+
+                    <!-- Servicio 5 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-icons"></i>
+                        </div>
+                        <h3>Terapias Recreativas</h3>
+                        <p>Talleres interactivos, juegos de mesa, música y arte para fomentar la alegría y estimulación constante.</p>
+                    </div>
+
+                    <!-- Servicio 6 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Terapias Ocupacionales</h3>
+                        <p>Actividades enfocadas en fortalecer las destrezas cognitivas, memoria y rutinas cotidianas.</p>
+                    </div>
+
+                    <!-- Servicio 7 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <h3>Celebración de Fechas</h3>
+                        <p>Eventos temáticos, cumpleaños y aniversarios festejados con alegría junto a familiares y amigos.</p>
+                    </div>
+
+                    <!-- Servicio 8 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-church"></i>
+                        </div>
+                        <h3>Misas Semanales</h3>
+                        <p>Espacios de espiritualidad y paz emocional mediante servicios religiosos semanales en nuestras instalaciones.</p>
+                    </div>
+
+                    <!-- Servicio 9 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon-box">
+                            <i class="fa-solid fa-square-parking"></i>
+                        </div>
+                        <h3>Facil Parqueo</h3>
+                        <p>Zona cómoda y totalmente segura para que los familiares puedan estacionar durante sus visitas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTADÍSTICAS ANIMADAS -->
+        <section id="estadisticas" class="stats-section bg-purple text-white">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card reveal-up">
+                        <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="counter" data-target="10">0</span><span class="plus">+</span>
+                        </div>
+                        <p class="stat-label">Años de Trayectoria & Confianza</p>
+                    </div>
+
+                    <div class="stat-card reveal-up">
+                        <div class="stat-icon"><i class="fa-solid fa-bed"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="counter" data-target="20">0</span>
+                        </div>
+                        <p class="stat-label">Habitaciones Confortables</p>
+                    </div>
+
+                    <div class="stat-card reveal-up">
+                        <div class="stat-icon"><i class="fa-solid fa-user-nurse"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="counter" data-target="10">0</span><span class="plus">+</span>
+                        </div>
+                        <p class="stat-label">Enfermeras & Especialistas 24/7</p>
+                    </div>
+
+                    <div class="stat-card reveal-up">
+                        <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="counter" data-target="100">0</span><span class="percent">%</span>
+                        </div>
+                        <p class="stat-label">Calidez & Compromiso Familiar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPINIONES / TESTIMONIOS -->
+        <section id="opiniones" class="section-padding bg-white">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <span class="sub-heading"><i class="fa-solid fa-quote-left"></i> Historias Reales</span>
+                    <h2 class="section-title">Lo que dicen las familias que confían en Antares</h2>
+                    <p class="section-subtitle">La tranquilidad de saber que sus seres queridos están en las mejores manos.</p>
+                </div>
+
+                <!-- Testimonials Carousel -->
+                <div class="testimonials-wrapper reveal-up">
+                    <button class="slider-arrow prev-arrow" id="prevTestimonial" aria-label="Testimonio anterior">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="testimonials-slider" id="testimonialsSlider">
+                        <!-- Testimonio 1 -->
+                        <div class="testimonial-card active">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Mi madre ha estado en Antares durante más de un año y no podríamos estar más felices. El personal es inmensamente humano, cariñoso y atento. Las instalaciones son impecables y se siente paz desde que entras."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                                <div>
+                                    <strong>María González</strong>
+                                    <span>Hija de Residente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 2 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"Antares ha sido una bendición para nuestra familia. Mi padre recibe una atención médica impecable, está feliz con la comida y disfruta mucho de las terapias físicas diarias."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                                <div>
+                                    <strong>Juan Pérez</strong>
+                                    <span>Hijo de Residente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 3 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"El equipo de enfermería y gerontología de Antares es extraordinario. Mi abuelita se siente verdaderamente como en casa y nosotros visitamos con total serenidad sabiendo que la cuidan como a su propia familia."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                                <div>
+                                    <strong>Laura Martínez</strong>
+                                    <span>Neta de Residente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonio 4 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-quote">"No puedo expresar lo agradecido que estoy. Mi tío ha mejorado notablemente su ánimo y salud física desde que se integró a Antares. Altamente recomendado a quienes busquen excelencia."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                                <div>
+                                    <strong>Carlos Sánchez</strong>
+                                    <span>Sobrino de Residente</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="slider-arrow next-arrow" id="nextTestimonial" aria-label="Siguiente testimonio">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN & CONTACTO SECTION -->
+        <section id="contacto" class="section-padding bg-cream">
+            <div class="container">
+                <div class="grid grid-2 gap-4">
+                    <!-- Información de Contacto -->
+                    <div class="contact-info-column reveal-left">
+                        <div class="section-header text-left">
+                            <span class="sub-heading"><i class="fa-solid fa-map-location-dot"></i> Punto de Información</span>
+                            <h2 class="section-title">Estamos Listos para Atenderte</h2>
+                        </div>
+                        <p class="body-text">
+                            Visítanos en nuestra sede en Manizales o contáctanos directamente a través de cualquiera de nuestros canales oficiales.
+                        </p>
+
+                        <div class="contact-cards-list">
+                            <!-- Card 1 -->
+                            <div class="info-item-card">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-details">
+                                    <h4>Ubicación Privilegiada</h4>
+                                    <p>La Castellana - Calle 10 A #28-29, Manizales, Caldas</p>
+                                    <a href="https://maps.app.goo.gl/JUKtbYyYu6Zx27G1A" target="_blank" class="info-link">
+                                        Ver en Google Maps <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="info-item-card">
+                                <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="info-details">
+                                    <h4>Horario de Visitas</h4>
+                                    <p>Todos los días de 9:00 am a 5:00 pm</p>
+                                    <span class="badge-tag">Entrada de Visitantes Habilitada</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="info-item-card">
+                                <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                                <div class="info-details">
+                                    <h4>Línea Telefónica & WhatsApp</h4>
+                                    <p>Atención directa: <strong>318 610 9411</strong></p>
+                                    <a href="https://wa.link/0nbzg0" target="_blank" class="info-link whatsapp-link">
+                                        Escribir al WhatsApp Directo <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="info-item-card">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-details">
+                                    <h4>Correo Electrónico Oficial</h4>
+                                    <p>gerenciaantares@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa de Ubicación -->
+                    <div class="contact-map-column reveal-right">
+                        <div class="map-box-container">
+                            <h3><i class="fa-solid fa-map-pin"></i>Encuentranos aquí</h3>
+                            <div class="map-responsive">
+                                <iframe
+                                    title="Ubicación Hogar Antares Adulto Mayor en Manizales"
+                                    src="https://maps.google.com/maps?q=Calle%2010A%20%2328-29%2C%20La%20Castellana%2C%20Manizales%2C%20Caldas%2C%20Colombia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <a href="https://maps.app.goo.gl/JUKtbYyYu6Zx27G1A" target="_blank" class="btn btn-outline-primary btn-block">
+                                <i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="img/antares_logo.png" alt="Logo Antares" class="footer-logo-img">
+                        <span>ANTARES</span>
+                    </div>
+                    <p>Hogar de cuidado integral para el adulto mayor en Manizales. Brindando una vida plena, confortable y digna con atención profesional 24/7.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/antares_adulto_mayor_manizales/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Antaresadultomayormanizales" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.link/ow089q" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                        <li><a href="#habitaciones">Habitaciones</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#opiniones">Opiniones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer-links">
+                    <h4>Servicios Destacados</h4>
+                    <ul>
+                        <li><a href="#servicios">Enfermería 24 Horas</a></li>
+                        <li><a href="#servicios">Alimentación Balanceada</a></li>
+                        <li><a href="#servicios">Terapias Físicas</a></li>
+                        <li><a href="#servicios">Estimulación Cognitiva</a></li>
+                        <li><a href="#servicios">Misas Semanales</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Calle 10 A #28-29, La Castellana, Manizales</p>
+                    <p><i class="fa-solid fa-phone"></i> +57 318 610 9411</p>
+                    <p><i class="fa-solid fa-envelope"></i> gerenciaantares@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Antares Adulto Mayor. Todos los derechos reservados.</p>
+                <button type="button" class="btn btn-outline-light btn-sm register-btn-footer" id="registerBtnFooter">
+                    <i class="fa-solid fa-user-plus"></i> Registro
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL AGENDAR RECORRIDO INTERACTIVO -->
+    <div class="modal-overlay" id="tourModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeTourModal" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-calendar-check modal-icon"></i>
+                <h3>Agendar Recorrido Gratuito</h3>
+                <p>Conoce nuestras instalaciones en Manizales de manera presencial o guiada por WhatsApp.</p>
+            </div>
+            <form id="tourForm" class="modal-form">
+                <div class="form-group">
+                    <label for="tourName"><i class="fa-solid fa-user"></i> Nombre Completo</label>
+                    <input type="text" id="tourName" required placeholder="Ej: María López">
+                </div>
+
+                <div class="form-group">
+                    <label for="tourPhone"><i class="fa-solid fa-phone"></i> Teléfono / WhatsApp</label>
+                    <input type="tel" id="tourPhone" required placeholder="Ej: 300 123 4567">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tourDate"><i class="fa-solid fa-calendar"></i> Fecha Preferida</label>
+                        <input type="date" id="tourDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tourTime"><i class="fa-solid fa-clock"></i> Hora Preferida</label>
+                        <select id="tourTime" required>
+                            <option value="">Selecciona horario...</option>
+                            <option value="9:00 AM a 11:30 AM">9:00 AM a 11:30 AM</option>
+                            <option value="2:00 PM a 5:00 PM">2:00 PM a 5:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-block btn-lg">
+                    <i class="fa-brands fa-whatsapp"></i> Confirmar Recorrido por WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.link/sse09x" target="_blank" class="floating-whatsapp-btn" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¡Habla con nosotros!</span>
+    </a>
+
+    <!-- Custom JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
